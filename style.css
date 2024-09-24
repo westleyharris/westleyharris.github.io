@@ -1,0 +1,575 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Navigation Styles */
+nav {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: rgba(18, 18, 18, 0.9);
+    z-index: 1000;
+    transition: background-color 0.3s;
+}
+
+nav.scrolled {
+    background-color: #1f1f1f;
+}
+
+nav .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+.logo a {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #BB86FC;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 2rem;
+}
+
+.nav-links a {
+    font-weight: 300;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #BB86FC;
+}
+
+/* Burger Menu */
+.burger {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* Hero Section */
+#hero {
+    height: 100vh;
+    background-image: url('hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+}
+
+#hero::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(18, 18, 18, 0.7);
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 1;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: #BB86FC;
+    opacity: 0;
+    transform: translateY(-50px);
+    animation: fadeInUp 1s forwards;
+}
+
+.hero-content h2 {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    display: inline-block;
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    opacity: 0;
+    transform: translateY(-50px);
+    animation: fadeInUp 1s forwards 0.5s;
+}
+
+.hero-content .btn {
+    background-color: #BB86FC;
+    color: #121212;
+    padding: 0.75rem 1.5rem;
+    border-radius: 25px;
+    font-weight: 600;
+    transition: background-color 0.3s;
+    opacity: 0;
+    transform: translateY(-50px);
+    animation: fadeInUp 1s forwards 1s;
+}
+
+.hero-content .btn:hover {
+    background-color: #9c66d5;
+}
+
+/* Section Styles */
+.section {
+    padding: 4rem 0;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    position: relative;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.section-title::after {
+    content: '';
+    width: 100px;
+    height: 3px;
+    background-color: #BB86FC;
+    display: block;
+    margin: 1rem auto 0;
+}
+
+.section-content {
+    font-size: 1.2rem;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+.skills-list {
+    width: 48%;
+    margin-bottom: 2rem;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.skills-list h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #BB86FC;
+}
+
+.skills-list ul {
+    list-style: none;
+}
+
+.skills-list li {
+    background-color: #1f1f1f;
+    margin: 0.5rem 0;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.skills-list li:hover {
+    background-color: #2a2a2a;
+}
+
+.soft-skills {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.soft-skills li {
+    background-color: #1f1f1f;
+    margin: 0.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 25px;
+    transition: background-color 0.3s;
+}
+
+.soft-skills li:hover {
+    background-color: #2a2a2a;
+}
+
+.portfolio-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.portfolio-item {
+    width: 48%;
+    margin-bottom: 2rem;
+    position: relative;
+    overflow: hidden;
+    opacity: 0;
+    transform: translateX(-20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.portfolio-item-content {
+    background-color: #1f1f1f;
+    padding: 2rem;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.portfolio-item:hover .portfolio-item-content {
+    transform: translateY(-10px);
+}
+
+.portfolio-item h3 {
+    color: #BB86FC;
+    margin-bottom: 1rem;
+}
+
+.portfolio-item p {
+    font-size: 1rem;
+}
+
+.portfolio-item a {
+    color: #BB86FC;
+    text-decoration: none;
+}
+
+.portfolio-item a:hover {
+    text-decoration: underline;
+}
+
+.courses-grid, .certifications-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+.course-item, .certification-item {
+    width: 23%;
+    background-color: #1f1f1f;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.course-item:hover, .certification-item:hover {
+    background-color: #2a2a2a;
+}
+
+.course-item p, .certification-item p {
+    font-size: 1rem;
+}
+
+.contact-info {
+    text-align: center;
+    font-size: 1.2rem;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.contact-info p {
+    margin: 1rem 0;
+}
+
+.contact-info i {
+    color: #BB86FC;
+    margin-right: 0.5rem;
+}
+
+footer {
+    background-color: #1f1f1f;
+    padding: 1rem 0;
+}
+
+footer p {
+    text-align: center;
+    font-size: 1rem;
+}
+
+@keyframes blink {
+    0%, 49% {
+        opacity: 1;
+    }
+    50%, 100% {
+        opacity: 0;
+    }
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in.appear {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.slide-in {
+    opacity: 0;
+    transform: translateX(-20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.slide-in.appear {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .nav-links {
+        position: absolute;
+        top: 80px;
+        right: -100%;
+        width: 100%;
+        background-color: #121212;
+        height: calc(100vh - 80px);
+        flex-direction: column;
+        align-items: center;
+        transition: right 0.3s;
+    }
+
+    .nav-links.active {
+        right: 0;
+    }
+
+    .nav-links li {
+        margin: 1.5rem 0;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .skills-list {
+        width: 100%;
+    }
+
+    .portfolio-item {
+        width: 100%;
+    }
+
+    .courses-grid .course-item, .certifications-grid .certification-item {
+        width: 48%;
+    }
+
+    .courses-grid, .certifications-grid {
+        justify-content: space-around;
+    }
+
+    .soft-skills {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .courses-grid .course-item, .certifications-grid .certification-item {
+        width: 100%;
+    }
+}
+
+/* Existing styles remain unchanged */
+
+/* Scroll Progress Bar */
+#progress-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 5px;
+    background-color: #BB86FC;
+    width: 0%;
+    z-index: 1001;
+}
+
+/* Back-to-Top Button */
+#back-to-top {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    background-color: #BB86FC;
+    color: #121212;
+    border: none;
+    padding: 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    z-index: 1000;
+    transition: background-color 0.3s;
+}
+
+#back-to-top:hover {
+    background-color: #9c66d5;
+}
+
+/* Adjustments for Particle Background */
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+/* Adjust Hero Content Positioning */
+#hero {
+    position: relative;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+/* Typed Text Style */
+.typed-text {
+    display: inline;
+}
+
+.typed-cursor {
+    font-size: 1.5rem;
+    opacity: 1;
+    animation: blink 0.7s infinite;
+}
+
+/* Certification Links Styles */
+.certification-item a {
+    color: inherit;
+    text-decoration: none;
+    display: block;
+    transition: transform 0.2s;
+}
+
+.certification-item a:hover {
+    transform: scale(1.05);
+}
+
+.certification-item a p {
+    margin: 0;
+}
+
+/* Button Styles */
+.btn {
+    background-color: #BB86FC;
+    color: #121212;
+    padding: 0.75rem 1.5rem;
+    border-radius: 25px;
+    font-weight: 600;
+    transition: background-color 0.3s;
+    display: inline-block;
+    margin: 0.5rem;
+    white-space: nowrap;
+}
+
+.btn:hover {
+    background-color: #9c66d5;
+}
+
+/* Specific Styles for Download Button */
+.btn-download {
+    background-color: #9c66d5;
+}
+
+.btn-download:hover {
+    background-color: #BB86FC;
+}
+
+
+/* Hero Buttons Container */
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Navigation Buttons */
+.nav-buttons {
+    display: flex;
+    align-items: center;
+}
+
+.nav-buttons .btn-download {
+    margin-right: 1rem;
+}
+
+@media (max-width: 768px) {
+    .nav-buttons {
+        flex-direction: row;
+        align-items: center;
+        margin-top: 0;
+    }
+    
+    .nav-buttons .btn-download {
+        margin-right: 1rem;
+        margin-bottom: 0;
+        order: 1;
+    }
+
+    .burger {
+        order: 2;
+    }
+}
+
+/* Animate Button on Hover */
+.btn-download:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}

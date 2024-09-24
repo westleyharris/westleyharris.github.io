@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Westley Harris - Data Scientist</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,600&display=swap" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Scroll Progress Bar -->
+    <div id="progress-bar"></div>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="container">
+            <div class="logo">
+                <a href="#">Westley Harris</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#skills">Technical Skills</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-buttons">
+                <a href="assets/resume.pdf" class="btn btn-download" download>Download Resume</a>
+                <div class="burger">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <!-- Particle Background -->
+        <div id="particles-js"></div>
+        <div class="hero-content">
+            <h1 class="fade-in">Westley Harris</h1>
+            <!-- Updated Typed Text Structure -->
+            <h2 class="fade-in-delay">
+                <span class="typed-text"></span>
+            </h2>
+            <div class="hero-buttons">
+                <!-- Buttons -->
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- About Me Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title fade-in">About Me</h2>
+            <div class="section-content fade-in">
+                <p>
+                    Detail-oriented and analytically driven professional with hands-on experience in data analysis, predictive modeling, and machine learning, with a proven track record of enhancing operational efficiencies and predictive accuracy. Skilled in developing actionable insights and data visualizations that contribute to strategic decision-making. Seeking to leverage my expertise in data-driven insights to drive success as a Data Scientist.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Skills Section -->
+    <section id="skills" class="section">
+        <div class="container">
+            <h2 class="section-title fade-in">Technical Skills</h2>
+            <div class="skills-container">
+                <div class="skills-list fade-in">
+                    <h3>Programming Languages</h3>
+                    <ul>
+                        <li>Python</li>
+                        <li>Java</li>
+                        <li>R</li>
+                        <li>SQL</li>
+                        <li>JavaScript</li>
+                        <li>TypeScript</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                    </ul>
+                </div>
+                <div class="skills-list fade-in">
+                    <h3>Frameworks & Tools</h3>
+                    <ul>
+                        <li>PyTorch</li>
+                        <li>TensorFlow</li>
+                        <li>Hadoop</li>
+                        <li>Spark</li>
+                        <li>MongoDB</li>
+                        <li>Tableau</li>
+                        <li>Excel</li>
+                        <li>Linux</li>
+                    </ul>
+                </div>
+            </div>
+            <h2 class="section-title fade-in">Soft Skills</h2>
+            <div class="skills-container">
+                <ul class="soft-skills fade-in">
+                    <li>Communication</li>
+                    <li>Problem-Solving</li>
+                    <li>Teamwork</li>
+                    <li>Critical Thinking</li>
+                    <li>Adaptability</li>
+                    <li>Time Management</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="section">
+        <div class="container">
+            <h2 class="section-title fade-in">Portfolio/Projects</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-item slide-in">
+                    <div class="portfolio-item-content">
+                        <h3><a href="https://ime-survey-app-13f04be89f9a.herokuapp.com/" target="_blank">Motor Plate Survey App</a></h3>
+                        <p>Python Flask application where user takes a photo of a motor plate and selects an excel file. The system uses GPT API to extract infomration from the motor plate then it is sent to an excel file.</p>
+                    </div>
+                </div>
+                <div class="portfolio-item slide-in">
+                    <div class="portfolio-item-content">
+                        <h3><a href="https://ime-pred-maint-dashboard-e6b9be4640a4.herokuapp.com/" target="_blank">Predictive Maintenance Dashboard</a></h3>
+                        <p>Python Dash where user can submit an excel of predictive findings and a dashboard is created. New findings can be added and old findings can be deleted.</p>
+                    </div>
+                </div>
+                <div class="portfolio-item slide-in">
+                    <div class="portfolio-item-content">
+                        <h3><a href="https://ime-pred-maint-dashboard-e6b9be4640a4.herokuapp.com/" target="_blank">RUL Estimator</a></h3>
+                        <p>Remaining useful life estimator using Random Forest Regression Model.</p>
+                    </div>
+                </div>
+                <div class="portfolio-item slide-in">
+                    <div class="portfolio-item-content">
+                        <h3><a href="https://ime-pred-maint-dashboard-e6b9be4640a4.herokuapp.com/" target="_blank">IPELINTA</a></h3>
+                        <p>AI-powered patent analysis platform.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section id="courses" class="section">
+        <div class="container">
+            <h2 class="section-title fade-in">Courses</h2>
+            <div class="courses-grid fade-in">
+                <div class="course-item">
+                    <p>Classical AI</p>
+                </div>
+                <div class="course-item">
+                    <p>Deep Learning</p>
+                </div>
+                <div class="course-item">
+                    <p>Data Mining</p>
+                </div>
+                <div class="course-item">
+                    <p>Machine Learning</p>
+                </div>
+                <div class="course-item">
+                    <p>Predictive Modeling</p>
+                </div>
+                <div class="course-item">
+                    <p>Techniques in Programming</p>
+                </div>
+                <div class="course-item">
+                    <p>Linear Algebra</p>
+                </div>
+                <div class="course-item">
+                    <p>Data Science</p>
+                </div>
+                <div class="course-item">
+                    <p>Statistics</p>
+                </div>
+                <div class="course-item">
+                    <p>Probability</p>
+                </div>
+                <div class="course-item">
+                    <p>Discrete Math II</p>
+                </div>
+                <div class="course-item">
+                    <p>Data Structures</p>
+                </div>
+                <div class="course-item">
+                    <p>Database Management Systems</p>
+                </div>
+                <div class="course-item">
+                    <p>Web Technologies</p>
+                </div>
+                <div class="course-item">
+                    <p>Analysis of Algorithms</p>
+                </div>
+                <div class="course-item">
+                    <p>Software Engineering</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="section">
+        <div class="container">
+            <h2 class="section-title fade-in">Certifications</h2>
+            <div class="certifications-grid fade-in">
+                <div class="certification-item">
+                    <a href="assets/certifications/Tableau Certificate.pdf" target="_blank">
+                        <p>Tableau</p>
+                    </a>
+                </div>
+                <div class="certification-item">
+                    <a href="assets/certifications/Google Certificate.pdf" target="_blank">
+                        <p>Google Data Analytics</p>
+                    </a>
+                </div>
+                <div class="certification-item">
+                    <a href="assets/certifications/Ultrasound Certification.PNG" target="_blank">
+                        <p>Ultrasound</p>
+                    </a>
+                </div>
+                <div class="certification-item">
+                    <a href="certifications/thermography.pdf" target="_blank">
+                        <p>Thermography</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title fade-in">Contact Information</h2>
+            <div class="contact-info fade-in">
+                <p><i class="fas fa-envelope"></i> Email: <a href="mailto:westley.harris11@gmail.com">westley.harris11@gmail.com</a></p>
+                <p><i class="fas fa-phone"></i> Phone: <a href="tel:+12146000497">214 600 0497</a></p>
+                <p><i class="fab fa-linkedin"></i> LinkedIn: <a href="https://www.linkedin.com/in/westleyharris/" target="_blank">linkedin.com/in/westleyharris/</a></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Back-to-Top Button -->
+    <button id="back-to-top"><i class="fas fa-arrow-up"></i></button>
+
+    <!-- JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
