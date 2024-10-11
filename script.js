@@ -82,7 +82,7 @@ backToTopButton.addEventListener('click', function() {
 
 // Typed.js for Hero Subtitle
 const typed = new Typed('.typed-text', {
-    strings: ['Data Scientist', 'Machine Learning Enthusiast', 'AI Developer'],
+    strings: ['Data Scientist', 'Machine Learning Engineer', 'Data Engineer', 'Data Analyst', 'Predictive Modeler'],
     typeSpeed: 60,
     backSpeed: 40,
     loop: true
